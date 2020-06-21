@@ -1,0 +1,20 @@
+#homepage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#homepage::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: image("/public/jpg/WelcomeBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+}
