@@ -17,7 +17,7 @@
             html, body {
                 background-image: url("https://image.freepik.com/free-photo/background-blurry-restaurant-shop-interior_1203-4031.jpg");
                 background-position: center;
-                background-size:100%;
+                background-size: cover;
                 background-repeat:no-repeat;
                 opacity: 0.8;
                 color: #636b6f;
