@@ -9,6 +9,7 @@ class OrderController extends Controller
 {
     //
     public function index(){
-        return view('order');
+        $stalls = \App\Stall::all()->toArray();
+        return view('order',compact('stalls'));
     }
 }
