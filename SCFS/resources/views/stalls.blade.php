@@ -4,4 +4,9 @@
 
 
 
+
+
+<a href="">{{$stall->products[0]->name}}</a>
+<div>{{$stall->products[0]->cost}}</div>
+
 @endsection 

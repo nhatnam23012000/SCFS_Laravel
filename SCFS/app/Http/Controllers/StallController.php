@@ -9,9 +9,11 @@ class StallController extends Controller
     //
     public function index($stall){
         $stall = Stall::findOrFail($stall);
-        $product = $stall->products->toArray();
+        $stall->products->toArray();
         return view('stalls',[
             'stall' => $stall,
         ]);
     }
+
+    
 }
