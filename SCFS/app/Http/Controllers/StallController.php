@@ -3,24 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Stall;
 class StallController extends Controller
 {
     //
-    public function index(){
-        
-        return view('stalls');
-    }
-
-    public function StallBaoky(){
-        return view('stalls.baoky');
-    }
-
-    public function StallHoangdat2(){
-        return view('stalls.hoangdat2');
-    }
-
-    public function Stallhutieu76(){
-        return view('stalls.hutieu76');
+    public function index($stall){
+        $stall = Stall::findOrFail($stall);
+        $product = $stall->products->toArray();
+        return view('stalls',[
+            'stall' => $stall,
+        ]);
     }
 }

@@ -20,17 +20,17 @@
     <div class="row justify-content-center pt-3">
         <div class="col-4 d-flex justify-content-center">
             <div>
-                <a class="btn btn-success" href="">BAO KY FIRIED RICE</a>
+            <a class="btn btn-success" href="{{'order/1'}}">BAO KY FIRIED RICE</a>
             </div>
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div>
-                <a class="btn btn-success" href="">HOANG DAT 2 VEGET HOTPOT</a>
+                <a class="btn btn-success" href={{'order/2'}}>HOANG DAT 2 VEGET HOTPOT</a>
             </div>
         </div>
         <div class="col-4 d-flex justify-content-center">
             <div>
-                <a class="btn btn-success" href="">HU TIEU 76</a>
+                <a class="btn btn-success" href={{'order/3'}}>HU TIEU 76</a>
             </div>
         </div>
     </div>

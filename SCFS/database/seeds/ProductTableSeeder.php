@@ -35,5 +35,52 @@ class ProductTableSeeder extends Seeder
             'stall_id'=>'1',
         ]);
         $product->save();
+
+        $product= new \App\Product([
+            'name' => 'Hotpot for 4 people',
+            
+            'cost'=>'120000',
+            'stall_id'=>'2',
+        ]);
+        $product->save();
+
+        $product= new \App\Product([
+            'name' => 'Hotpot for 6 people',
+            
+            'cost'=>'180000',
+            'stall_id'=>'2',
+        ]);
+        $product->save();
+
+        $product= new \App\Product([
+            'name' => 'Extra noodles and vegetable',
+            'cost'=>'7000',
+            'stall_id'=>'2',
+        ]);
+        $product->save();
+
+        $product= new \App\Product([
+            'name' => 'Dried noodles',
+            
+            'cost'=>'15000',
+            'stall_id'=>'3',
+        ]);
+        $product->save();
+
+        $product= new \App\Product([
+            'name' => 'noodles with pork',
+            
+            'cost'=>'20000',
+            'stall_id'=>'3',
+        ]);
+        $product->save();
+
+        $product= new \App\Product([
+            'name' => 'Banh canh',
+            
+            'cost'=>'20000',
+            'stall_id'=>'3',
+        ]);
+        $product->save();
     }
 }
