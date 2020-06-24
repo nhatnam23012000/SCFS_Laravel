@@ -16,7 +16,7 @@ class CreateStallsTable extends Migration
         Schema::create('stalls', function (Blueprint $table) {
             $table->id();
             $table->text('name');
-            $table->string('image_link');
+            
             $table->timestamps();
 
             $table->index('id');
