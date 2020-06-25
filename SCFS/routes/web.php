@@ -26,3 +26,6 @@ Route::get('/order', 'OrderController@index')->name('order');
 Route::get('/manage', 'ManageController@index')->name('manage');
 
 Route::get('/order/{stall}', 'StallController@index')->name('stall.show');
+
+Route::get('/cart','CartController@index')->name('cart.index');
+Route::post('/cart','CartController@store')->name('cart.store');
