@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Gloudemans\Shoppingcart\Facades\Cart;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,3 +29,8 @@ Route::get('/order/{stall}', 'StallController@index')->name('stall.show');
 
 Route::get('/cart','CartController@index')->name('cart.index');
 Route::post('/cart','CartController@store')->name('cart.store');
+Route::delete('/cart/{product}','CartController@destroy')->name('cart.destroy');
+
+Route::get('empty', function (){
+    Cart::destroy();
+});

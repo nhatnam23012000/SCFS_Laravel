@@ -11,4 +11,8 @@ class Product extends Model
     public function stall(){
         return $this->belongsTo(Stall::class);
     }
+
+    public function presentPrice(){
+        return $this->cost;
+    }
 }

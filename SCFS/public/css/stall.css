@@ -1,3 +1,6 @@
-.image {
-    max-height: 200px;
+.productName {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: #000000;
 }

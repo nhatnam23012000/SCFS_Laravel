@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
@@ -15,6 +16,7 @@ class CartController extends Controller
     {
         return view('cart');
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -34,8 +36,14 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        cart::add($request->id);
+        Cart::add($request->id,$request->name, 1,$request->price)
+        ->associate('\App\Product');
+
+        return redirect()->route('cart.index')->with('success-message', 'Item added successfully!');
+
     }
+
+
 
     /**
      * Display the specified resource.
@@ -79,6 +87,8 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Cart::remove($id);
+
+        return back()->with('success_message','removed');
     }
 }
