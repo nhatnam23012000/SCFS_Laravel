@@ -34,7 +34,7 @@
                 {{csrf_field()}}
                 <input type="hidden" name="id" value="{{$stall->products[0]->id}}">
                 <input type="hidden" name="name" value="{{$stall->products[0]->name}}">
-
+                <input type="number" name="quantity">
                 <input type="hidden" name="price" value="{{$stall->products[0]->cost}}">
                 <button type="submit" class="btn btn-success">Add to order</button>
             </form>
@@ -44,7 +44,7 @@
                 {{csrf_field()}}
                 <input type="hidden" name="id" value="{{$stall->products[1]->id}}">
                 <input type="hidden" name="name" value="{{$stall->products[1]->name}}">
-
+                <input type="number" name="quantity">
                 <input type="hidden" name="price" value="{{$stall->products[1]->cost}}">
                 <button type="submit" class="btn btn-success">Add to order</button>
             </form>
@@ -54,10 +54,16 @@
                 {{csrf_field()}}
                 <input type="hidden" name="id" value="{{$stall->products[2]->id}}">
                 <input type="hidden" name="name" value="{{$stall->products[2]->name}}">
-
+                <input type="number" name="quantity">
                 <input type="hidden" name="price" value="{{$stall->products[2]->cost}}">
                 <button type="submit" class="btn btn-success">Add to order</button>
             </form>
+        </div>
+    </div>
+
+    <div class="row justify-content-center pt-5">
+        <div class="col-4 d-flex justify-content-center">
+        <a class="btn btn-info"href="{{route('cart.index')}}">Check your order</a>
         </div>
     </div>
 

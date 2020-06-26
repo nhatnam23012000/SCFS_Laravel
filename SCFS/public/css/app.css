@@ -10125,3 +10125,7 @@ a.text-dark:focus {
 .order-button {
     width: 415px;
 }
+
+.cart-count {
+    background-color: yellow;
+}

@@ -11,19 +11,21 @@
     <div class="row justify-content-center">
        <table class="table table-dark">
            <thead>
-            <tr>
-                <th scope="col">Item name</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
-                <th scope="col"></th>
-            </tr>
+                <tr>
+                    <th scope="col">Stall</th>
+                    <th scope="col">Item name</>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                </tr>
            </thead>
            <tbody>
                @foreach (Cart::content() as $item)
                 <tr>
+                    <td>{{$item->model->stall->name}}</td>
                     <td>{{$item->model->name}}</td>
-                    <td>{{$item->quantity}}</td>
-                    <th>{{$item->model->presentPrice()}}</th>
+                    <td>{{$item->qty}}</td>
+                    <th>{{$item->model->presentPrice() * $item->qty}}Đ</th>
                     <td>
                     <form action="{{route('cart.destroy',$item->rowId)}}" method="POST">
                         {{csrf_field()}}
@@ -34,6 +36,12 @@
                     </td>
                 </tr>
                 @endforeach
+                <tr>
+                    <th scope="row">Total</th>
+                    <td></td>
+                    <td></td>
+                    <th scope="row">{{Cart::subtotal()}}Đ</th>
+                </tr>
            </tbody>
        </table>
     </div>
@@ -45,8 +53,8 @@
     </div>
 
     @else
-    <h3>Sorry, there is nothing here</h3>
-<a href="{{route('order')}}" class="btn btn-danger">Return to stalls</a>
+        <h3>Sorry, there is nothing here</h3>
+        <a href="{{route('order')}}" class="btn btn-danger">Return to stalls</a>
     @endif
 </div>
 @endsection
