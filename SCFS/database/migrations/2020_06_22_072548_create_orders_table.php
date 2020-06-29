@@ -16,12 +16,17 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
-            $table->string('stall');
-            $table->text('cart');
-            $table->string('status');
+            $table->foreign('user_id')->references('id')->on('users')
+                  ->onUpdate('cascade')->onDelete('set null');
+            //$table->unsignedBigInteger('stall_id');
+            //$table->foreign('stall_id')->references('id')->on('stalls')
+            //  ->onUpdate('cascade')->onDelete('set null');
+
+            $table->boolean('done')->default(false);
             $table->integer('cost');
             $table->timestamps();
-            
+
+
             $table->index('user_id');
         });
     }

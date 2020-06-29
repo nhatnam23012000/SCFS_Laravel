@@ -34,3 +34,5 @@ Route::delete('/cart/{product}','CartController@destroy')->name('cart.destroy');
 Route::get('empty', function (){
     Cart::destroy();
 });
+
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.show');

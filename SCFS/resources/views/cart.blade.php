@@ -47,8 +47,8 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-4 d-flex justify-content-center">
-            <button class="btn btn-success">Continue to add</button>
-            <button class="btn btn-success">Checkout</button>
+            <a class="btn btn-success"href="{{url()->previous()}}">Continue to add</a>
+        <a href="{{route('checkout.show')}}" class="btn btn-success">Proceed to checkout</a>
         </div>
     </div>
 

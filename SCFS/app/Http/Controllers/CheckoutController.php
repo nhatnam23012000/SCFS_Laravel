@@ -2,21 +2,39 @@
 
 namespace App\Http\Controllers;
 
-use Gloudemans\Shoppingcart\Facades\Cart;
+use App\order;
+use App\OrderProduct;
 use Illuminate\Http\Request;
+use Gloudemans\Shoppingcart\Facades\Cart;
 
-class CartController extends Controller
+class CheckoutController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('cart');
-    }
+        //insert to order tables
+        $order = Order::create([
+            'user_id' => auth()->user() ? auth()->user()->id : null,
 
+            'cost'=> Cart::instance('default')->subtotal(),
+        ]);
+
+        foreach(Cart::content() as $item ){
+            OrderProduct::create([
+                'order_id'=> $order->id,
+                'product_id'=> $item->model->id,
+                'quantity'=> $item->qty,
+            ]);
+        }
+
+        Cart::instance('default')->destroy();
+
+        return view('checkout');
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -36,14 +54,8 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        Cart::add($request->id,$request->name,$request->quantity ?? 1,$request->price)
-        ->associate('\App\Product');
-
-        return back();
 
     }
-
-
 
     /**
      * Display the specified resource.
@@ -87,8 +99,6 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-        Cart::remove($id);
-
-        return back()->with('success_message','removed');
+        //
     }
 }
