@@ -23,9 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/order', 'OrderController@index')->name('order');
 
-Route::get('/manage/{user}', 'ManageController@index')->name('manage.show');
-
-Route::get('manage/detail/{order}', 'ManageController@detail')->name('manage.detail');
+Route::get('/manage', 'ManageController@index')->name('manage');
 
 Route::get('/order/{stall}', 'StallController@index')->name('stall.show');
 
