@@ -25,4 +25,25 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function cook()
+    {
+        return view('adminpage.cook');
+    }
+
+    public function stallowner()
+    {
+        return view('adminpage.stallowner');
+    }
+
+    public function manager()
+    {
+        return view('adminpage.manager');
+    }
+
+    public function itstaff()
+    {
+        return view('adminpage.itstaff');
+    }
+
 }
