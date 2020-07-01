@@ -41,7 +41,7 @@
             }
 
             .position-ref {
-                
+
             }
 
             .top-right {
@@ -79,7 +79,7 @@
               border: 3px solid #28648b;
               background: none;
               padding: 10px 20px;
-              font-size: 20px; 
+              font-size: 20px;
               font-family: 'Balsamiq Sans', cursive;
               cursor: pointer;
               margin:10px;
@@ -100,10 +100,10 @@
            .btn1 > a{
                color: #eeeb4f;
                text-decoration: none;
-               
+
            }
            .btn1:hover{
-           color: #fff;     
+           color: #fff;
            }
            .btn1::before{
                top: 0;
@@ -120,17 +120,17 @@
                 <div class="top-right links" id="login">
                     @auth
                     <button class="btn btn1">
-                        
-                        <a href="{{ url('/home') }}">HOME</a>
+
+                        <a href="{{ route('home') }}">HOME</a>
                     </button>
                     @else
                     <button class="btn btn1">
-                        
+
                         <a href="{{ route('login') }}">LOGIN</a>
                     </button>
                         @if (Route::has('register'))
                         <button class="btn btn1">
-                           
+
                             <a href="{{ route('register') }}"> REGISTER</a>
                         </button>
                         @endif
@@ -147,7 +147,7 @@
                    <h3>Easy, convinience, joyful way to eat</h3>
                 </div>
             </div>
-            
+
         </div>
     </body>
 </html>
