@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Carbon\Carbon;
 class HomeController extends Controller
 {
     /**
@@ -28,7 +28,8 @@ class HomeController extends Controller
 
     public function cook()
     {
-        return view('adminpage.cook');
+        $orders = \App\order::whereDate('created_at', Carbon::today())->get();
+        return view('adminpage.cook')->withOrders($orders);
     }
 
     public function stallowner()

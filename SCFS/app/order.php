@@ -12,7 +12,7 @@ class order extends Model
 
 
     public function users(){
-        return $this->belongsTo(User::class);
+        return $this->belongsTo('\App\User', 'user_id');
     }
 
     public function stalls(){
