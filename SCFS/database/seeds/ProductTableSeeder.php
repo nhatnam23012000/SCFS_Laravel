@@ -38,7 +38,7 @@ class ProductTableSeeder extends Seeder
 
         $product= new \App\Product([
             'name' => 'Hotpot for 4 people',
-            'imageUrl'=>'link',
+            'imageUrl'=>'/jpg/hotPotFor4people.jpg',
             'cost'=>'120000',
             'stall_id'=>'2',
         ]);
@@ -46,7 +46,7 @@ class ProductTableSeeder extends Seeder
 
         $product= new \App\Product([
             'name' => 'Hotpot for 6 people',
-            'imageUrl'=>'link',
+            'imageUrl'=>'/jpg/hotPotFor6people.jpg',
             'cost'=>'180000',
             'stall_id'=>'2',
         ]);
@@ -54,7 +54,7 @@ class ProductTableSeeder extends Seeder
 
         $product= new \App\Product([
             'name' => 'Extra noodles and vegetable',
-            'imageUrl'=>'link',
+            'imageUrl'=>'/jpg/noodles.jpg',
             'cost'=>'7000',
             'stall_id'=>'2',
         ]);
@@ -62,7 +62,7 @@ class ProductTableSeeder extends Seeder
 
         $product= new \App\Product([
             'name' => 'Dried noodles',
-            'imageUrl'=>'link',
+            'imageUrl'=>'/jpg/driedNoodles.jpg',
             'cost'=>'15000',
             'stall_id'=>'3',
         ]);
@@ -70,7 +70,7 @@ class ProductTableSeeder extends Seeder
 
         $product= new \App\Product([
             'name' => 'noodles with pork',
-            'imageUrl'=>'link',
+            'imageUrl'=>'/jpg/noodlesWithPork.jpg',
             'cost'=>'20000',
             'stall_id'=>'3',
         ]);
@@ -78,7 +78,7 @@ class ProductTableSeeder extends Seeder
 
         $product= new \App\Product([
             'name' => 'Banh canh',
-            'imageUrl'=>'link',
+            'imageUrl'=>'/jpg/banhCanh.jpg',
             'cost'=>'20000',
             'stall_id'=>'3',
         ]);

@@ -67,6 +67,12 @@
         </div>
     </div>
 
+    <div class="row justify-content-center pt-5">
+        <div class="col-4 d-flex justify-content-center">
+        <a class="btn btn-info"href="{{route('order')}}">Back to stall</a>
+        </div>
+    </div>
+
 
 </div>
 

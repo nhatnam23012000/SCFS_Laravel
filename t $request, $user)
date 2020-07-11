@@ -1,0 +1,123 @@
+[33mcommit 2021d34d2e0bf0e51ab3594987dfe488dde89c12[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Thu Jul 2 23:05:31 2020 +0700
+
+    hard coding view of admin, prepare to make stall owner, created report model
+
+[33mcommit 04dee06525ca3931d5202e66f79a837077bac478[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Thu Jul 2 22:09:10 2020 +0700
+
+    done cook feature
+
+[33mcommit 1df240c023b8c1fd83d8f21ee26580dbf2d01ac0[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jul 1 23:00:19 2020 +0700
+
+    done redirecting, next will be the cook
+
+[33mcommit 19014611e0753a5cad53b02c9a451d3bb21fd1c2[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jul 1 20:57:58 2020 +0700
+
+    Created test account, prepare to redirect login
+
+[33mcommit 294e6ed84a4fcbaeffe2fc865432873c4f5ef923[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jul 1 15:21:00 2020 +0700
+
+    Revert "failure"
+    
+    This reverts commit 2b785afea8b3ff5de64bbe46f301b90eb729800d.
+
+[33mcommit d1f160eda1b78bc10e1cf6de182f6bdc5765c265[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jul 1 14:52:51 2020 +0700
+
+    Revert "done customer function"
+    
+    This reverts commit 7055de9b0b62139470fe797219bbd87a59fcd95e.
+
+[33mcommit 2b785afea8b3ff5de64bbe46f301b90eb729800d[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jul 1 14:52:45 2020 +0700
+
+    failure
+
+[33mcommit 7055de9b0b62139470fe797219bbd87a59fcd95e[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Tue Jun 30 16:15:32 2020 +0700
+
+    done customer function
+
+[33mcommit a53264299f75a0473269a6d0f82b1cb2cc630af9[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Mon Jun 29 14:59:39 2020 +0700
+
+    done ordering, prepare to make manage order function
+
+[33mcommit 831d148a4253eb1716ef392fda0f4d3f9929b085[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Sat Jun 27 04:49:44 2020 +0700
+
+    done the cart, prepare to make the manage and checkout, if checkout, create a new order with this cart and remove it
+
+[33mcommit 19c0e933b63ec9e0b10d1f3c45abd0162e1a54b4[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Sat Jun 27 03:03:28 2020 +0700
+
+    add cart and remove function, prepare to show quantity and calculate cost
+
+[33mcommit fbd669954f054dc200e2865ed65138e7e7c00e8a[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Thu Jun 25 19:07:12 2020 +0700
+
+    prepare to build cart
+
+[33mcommit 7b7e834fbe3a21c23f6507cf98bc2a066b43f767[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jun 24 16:36:33 2020 +0700
+
+    dynamic order page successful
+
+[33mcommit 0685348dad75944446561fd9e0bc54a845feb28b[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jun 24 15:48:54 2020 +0700
+
+    add link and prepare to make dynamic order page
+
+[33mcommit 1da271759754a4174f7d84e57ad1ef57bb188627[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Wed Jun 24 07:42:34 2020 +0700
+
+    add view of order and intiallize view of each stall, not yet add stall to database
+
+[33mcommit cd9c7ada2bf1a3089855f2a27c6278cb5462a023[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Tue Jun 23 17:07:31 2020 +0700
+
+    before adding image storage
+
+[33mcommit 65887e8e7c4ab2f495d514899f2c8a4372ef9420[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Mon Jun 22 15:49:20 2020 +0700
+
+    intiallize product->stall, next will be the checkout and cart
+
+[33mcommit b3ca29c3811adebf4aa912be33014c81cecaddc3[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Mon Jun 22 09:55:28 2020 +0700
+
+    add the homepage for user and intiallize order and manage page
+
+[33mcommit 6f51cc520e06c57c709e2dde2a0655d3157c8bcd[m
+Author: Nam Nguyen <nhatnam23012000@gmail.com>
+Date:   Sun Jun 21 21:36:40 2020 +0700
+
+    first commit
+
+[33mcommit e80a59f1bc529e891f41dff860922c9d338d26b2[m
+Author: nhatnam23012000 <50514519+nhatnam23012000@users.noreply.github.com>
+Date:   Sun Jun 21 21:29:21 2020 +0700
+
+    Initial commit
